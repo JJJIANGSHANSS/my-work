@@ -75,7 +75,7 @@ h1 {
 
 .about h2 {
     color: #ffffff;
-    font-size: 42px;
+    font-size: 36px;
     margin-top: 180px;
 }
 
@@ -274,7 +274,14 @@ input:focus {
     .shop img {
         width: 100%; /* 修改为 100% 宽度 */
     }
-        
+
+
+.about h2 {
+    color: #ffffff;
+    font-size: 30px;
+    margin-top: 180px;
+}
+    
 
     .FLOWER img,
     .VASE img,
