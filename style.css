@@ -20,7 +20,7 @@ h1 {
     left: 120px;
     top: 0;
     line-height: 80px;
-    background-image: url(images/logo2.svg);
+    background-image: url(https://raw.githubusercontent.com/JJJIANGSHANSS/my-work/228ba5959dd58133e259869d31679ed5daa7bc56/logo2.svg);
     background-repeat: no-repeat;
     background-position: center;
     width: 210px;
@@ -63,7 +63,7 @@ h1 {
     background-color:  rgba(170, 170, 170);
     color: #ffffff;
     height: 95vh;
-    background-image: url("images/background3.jpg");
+    background-image: url("https://raw.githubusercontent.com/JJJIANGSHANSS/my-work/228ba5959dd58133e259869d31679ed5daa7bc56/background3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
