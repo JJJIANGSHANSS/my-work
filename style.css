@@ -1,0 +1,308 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+h1 {
+    color: #000000;
+    position: absolute;
+    left: 120px;
+    top: 0;
+    line-height: 80px;
+    background-image: url(images/logo2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 210px;
+    text-indent: -9999px;
+}
+
+.menu-button{
+    display: none;
+}
+
+.menu-nav {
+    position: absolute;
+    right: 5vw;
+    top: 0;
+    line-height: 80px;
+}
+
+.menu-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-nav li {
+    display: inline;
+    margin-right: 4vw;
+}
+
+.menu-nav a {
+    color: #231815;
+    text-decoration: none;
+}
+
+.menu-nav a:hover {
+    text-decoration: underline;
+}
+
+/* News Section */
+.about {
+    background-color:  rgba(170, 170, 170);
+    color: #ffffff;
+    height: 95vh;
+    background-image: url("images/background3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about h2 {
+    color: #ffffff;
+    font-size: 42px;
+    margin-top: 180px;
+}
+
+.about p {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 25px 0;
+}
+
+.about a {
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.name{
+    background-color: #f1f1f1;
+    color: #000000;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4e4e4e;
+    color: #e0e0e0;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+/* Shop Section */
+.shop {
+    display: flex;
+}
+
+.shop img {
+    width: 50%;
+}
+.shop h2{
+    font-size: 20px;
+    
+}
+.info {
+    width: 50%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info h2 {
+    color: #000000;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.info p {
+    text-align: center;
+    line-height: 2em;
+}
+
+/* Common Section Styles */
+.FLOWER,
+.VASE,
+.POSTCARD {
+    display: flex;
+    background-color: #e0e0e0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 180px 80px;
+}
+
+.FLOWER div,
+.VASE div,
+.POSTCARD div {
+    width: 300px;
+    text-align: center;
+}
+
+.FLOWER img,
+.VASE img,
+.POSTCARD img {
+    width: 80%;
+    border-radius: 10px;
+    
+}
+
+.FLOWER h3,
+.VASE h3,
+.POSTCARD h3 {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+
+
+/* Newsletter Section */
+.newsletter {
+    background-color: #686868;
+    color: #ffffff;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter p {
+    margin-bottom: 20px;
+}
+
+.newsletter input,
+.newsletter button {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.newsletter input {
+    width: 200px;
+    margin-right: 15px;
+}
+
+.newsletter button {
+    width: 80px;
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: #ffffff;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design 响应式设计 */
+@media screen and (max-width: 768px) {
+    header ul{
+        display: none;
+    }
+
+    .menu-nav {
+        display: none;
+    }
+
+    header h1 {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .news h2{
+        font-size: 40px;
+    }
+
+    .menu-button {
+        display: block;
+        background-color: transparent;
+        color: #231815;
+        font-size: 35px;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .shop {
+        flex-direction: column;
+    }
+    .shop img {
+        width: 100%; /* 修改为 100% 宽度 */
+    }
+        
+
+    .FLOWER img,
+    .VASE img,
+    .POSTCARD img  {
+        width: 100%;
+    }
+
+    .info {
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .info h2 {
+        font-size: 30px;
+    }
+
+    .FLOWER,
+    .VASE,
+    .POSTCARD {
+        flex-direction: column;
+        padding: 60px 0;
+    }
+
+    .FLOWER div,
+.VASE div,
+.POSTCARD div  {
+        margin-bottom: 30px;
+    }
+
+    
+}
