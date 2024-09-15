@@ -75,7 +75,7 @@ h1 {
 
 .about h2 {
     color: #ffffff;
-    font-size: 36px;
+    font-size: 32px;
     margin-top: 180px;
 }
 
@@ -276,11 +276,7 @@ input:focus {
     }
 
 
-.about h2 {
-    color: #ffffff;
-    font-size: 30px;
-    margin-top: 180px;
-}
+
     
 
     .FLOWER img,
